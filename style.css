@@ -68,6 +68,9 @@
   color: #fff;
   border: 1px solid transparent;
 }
+.navbar .menu li button:active {
+  background-color: #3b3b3b;
+}
 .navbar .menu li a {
   color: #131313;
   font-size: 18px;
@@ -341,8 +344,13 @@
 .contactRight {
   color: #131313;
   width: 50%;
-  text-align: center;
+  text-align: left;
   padding-top: 240px;
+}
+.contactRight form .fields {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 input[type=text], input[type=email]{
   width: 440px;
@@ -356,7 +364,7 @@ input[type=text], input[type=email]{
   font-family: 'Open Sans',sans-serif;
   font-weight: 300;
 }
-input[type=submit] {
+button[type=submit] {
   width: 40%;
   background-color: #81331B;
   color: white;
@@ -368,6 +376,12 @@ input[type=submit] {
   font-size: 16px;
   font-family: 'Open Sans',sans-serif;
   font-weight: 300;
+}
+input[type=submit]:hover {
+  background-color: #5a2312;
+}
+button[type=submit]:active {
+  background-color: #53342a;
 }
 .contact-table textarea {
   padding: 12px 12px;
