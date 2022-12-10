@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
-    <script src="script.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <link rel="stylesheet" href="style.css">
 
@@ -55,23 +53,14 @@
             <div class="content">Consectetur arcu vulputate sem et. A nulla sit id consequat commodo augue nunc maecenas proin. Adipiscing vestibulum quis enim non. Amet et quisque adipiscing in vel sit ultrices pellentesque in. Elit nunc ornare tellus in iaculis eget dignissim orci.</div>
            </div> 
            <div class="contactRight">
-                <form action="#">
+                <form name="submit-to-google-sheet">
                     <div class="fields">
-                        <div class="field name">
-                            <input type="text" placeholder="Name">    
-                        </div> 
-                        <div class="field email">
-                            <input type="email" placeholder="Email">    
-                        </div> 
-                        <div class="field message">
-                            <textarea name="message" cols="58" rows="10" placeholder="Message"></textarea>
-                        </div> 
-                        <div class="submit">
-                            <input type="submit" value="Send">
-                        </div>
+                        <input type="text"  name="Name" placeholder="Name"  required>    
+                        <input type="email" name="Email" placeholder="Email"  required>    
+                        <textarea  name="Message" cols="58" rows="10"  placeholder="Message" required></textarea>
+                        <button type="submit" class="form-btn">Send</button>
                     </div>
-                </form>
-               
+                </form> 
            </div>
         </div>
     </section>
@@ -99,6 +88,22 @@
         </div>
         
     </section>
-
+    <!-- contact form data storage -->
+    <script> 
+        // Reference: form-to-google-sheets https://github.com/jamiewilson/form-to-google-sheets
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyGz5WBB9cZFQbF3LjPSKlrMXrE2_BBIuCwKGO4ZwLo3XB4iDXKSJDtfNtHe3LO8QHsDA/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+            console.log('zoe')
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script> 
+      <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+      <script src="script.js"></script>
+      
 </body>
 </html>
