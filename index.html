@@ -5,9 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
-    <script src="script.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <link rel="stylesheet" href="style.css">
 
     <title>My Personal Web</title>
@@ -43,67 +40,66 @@
     </section>
 
     <!-- Select works section -->
-    <section class="works">
-        <section class="select-work work1">
-        <div class="max-width">
-            <div class="work-summary">
-                <div class="divided-line"></div>
-                <div class="number">01</div>
-                <div class="header">Sapien dolor turpis sed lorem eu.</div>
-                <div class="summary">Consectetur arcu vulputate sem et. A nulla sit id consequat commodo augue nunc maecenas proin. Adipiscing vestibulum quis enim non. Amet et quisque adipiscing in vel sit ultrices pellentesque in. Elit nunc ornare tellus in iaculis eget dignissim orci.</div>
-            </div>
-            <div class="work-image">
-                <div class="header-works">Select works</div>
-                <div class="image">
-                    <img src="./image/pexels-kozymeii-kong-950754.jpeg " alt="image-1">
+    <section class="works" id="works_container">
+        <div class="select-work" id="work1">
+            <div class="max-width">
+                <div class="work-summary">
+                    <div class="divided-line"></div>
+                    <div class="number">01</div>
+                    <div class="header">Sapien dolor turpis sed lorem eu.</div>
+                    <div class="summary">Consectetur arcu vulputate sem et. A nulla sit id consequat commodo augue nunc maecenas proin. Adipiscing vestibulum quis enim non. Amet et quisque adipiscing in vel sit ultrices pellentesque in. Elit nunc ornare tellus in iaculis eget dignissim orci.</div>
+                </div>
+                <div class="work-image">
+                    <div class="header-works">Select works</div>
+                    <div class="image">
+                        <img src="./image/pexels-kozymeii-kong-950754.jpeg " alt="image-1">
+                    </div>
+                </div>
+                <div class="next-button">
+                <!-- <button onclick="slide('next')">Next</button> -->
                 </div>
             </div>
-            <div class="next-button">
-                <!-- <button onclick="slide('next')">Next</button> -->
-            </div>
         </div>
-        </section>
-        <section class="select-work work2">
-        <div class="max-width">
-            <div class="work-summary">
-                <div class="divided-line"></div>
-                <div class="number">02</div>
-                <div class="header">Commodo vulputate eleifend viverra ut</div>
-                <div class="summary">Fringilla sociis dui diam placerat tellus integer feugiat. Tempus pulvinar ac mi turpis. Nisl in lacus curabitur neque vitae ultrices id ac. Est rhoncus tortor in egestas rhoncus lorem id risus. Et adipiscing nulla turpis etiam risus auctor sit consectetur.</div>
-            </div>
-            <div class="work-image">
-                <div class="header-works"></div>
-                <div class="image">
+        <div class="select-work" id="work2">
+            <div class="max-width">
+                <div class="work-summary">
+                    <div class="divided-line"></div>
+                    <div class="number">02</div>
+                    <div class="header">Commodo vulputate eleifend viverra ut</div>
+                    <div class="summary">Fringilla sociis dui diam placerat tellus integer feugiat. Tempus pulvinar ac mi turpis. Nisl in lacus curabitur neque vitae ultrices id ac. Est rhoncus tortor in egestas rhoncus lorem id risus. Et adipiscing nulla turpis etiam risus auctor sit consectetur.</div>
+                </div>
+                <div class="work-image">
+                    <div class="header-works"></div>
+                    <div class="image">
                     <img src="./image/pexels-mikael-blomkvist-6476584.jpeg" alt="image-2">
+                    </div>
                 </div>
-
-            </div>
-            <div class="next-button">
+                <div class="next-button">
                 <!-- <button onclick="slide('next')">Next</button> -->
+                </div>
             </div>
         </div>
-        </section>
-        <section class="select-work work3">
-        <div class="max-width">
-            <div class="work-summary">
-                <div class="divided-line"></div>
-                <div class="number">03</div>
-                <div class="header">In pellentesque imperdiet at nibh</div>
-                <div class="summary">Eu amet sed massa convallis tellus. Tristique magna nisl nulla aliquam tincidunt sem nibh arcu cras. In tristique tincidunt ultrices sodales neque enim. Facilisi nibh erat consectetur sit in leo lacus.</div>
-            </div>
-            <div class="work-image">
+        <div class="select-work" id="work3">
+            <div class="max-width">
+                <div class="work-summary">
+                    <div class="divided-line"></div>
+                    <div class="number">03</div>
+                    <div class="header">In pellentesque imperdiet at nibh</div>
+                    <div class="summary">Eu amet sed massa convallis tellus. Tristique magna nisl nulla aliquam tincidunt sem nibh arcu cras. In tristique tincidunt ultrices sodales neque enim. Facilisi nibh erat consectetur sit in leo lacus.</div>
+                </div>
+                <div class="work-image">
                 <div class="header-works"></div>
                 <div class="image">
                     <img src="./image/pexels-meta-dizayn-1058100.jpeg" alt="image-3">
                 </div>
-
-            </div>
-            <div class="next-button">
+                </div>
+                <div class="next-button">
                 <!-- <button onclick="slide('prev')">Previous</button> -->
+                </div>
             </div>
         </div>
-        </section>
     </section>
+
     <!-- footer section  -->
     <section class="footer">
         <div class="max-width">
@@ -125,8 +121,10 @@
                 </ul>
             </div>
             <div class="copyright">©ZoeyX.2022</div>
-        </div>
-        
+        </div>   
     </section>
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script src="script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 </body>
 </html>
