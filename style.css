@@ -7,7 +7,6 @@
   text-decoration: none;
   list-style: none;
 }
-
 .max-width {
   /* max-width: 1512px; */
   padding: 0 80px;
@@ -178,13 +177,13 @@
   transition: all .5s ease-in-out;
   box-sizing: border-box;
 }
-.select-work.work1 {
+.select-work#work1 {
   background-color: #131313;
 }
-.select-work.work2 {
+.select-work#work2 {
   background-color: #81331B;
 }
-.select-work.work3 {
+.select-work#work3 {
   background-color: #f4f4f4;
 }
 .select-work .max-width{
@@ -218,6 +217,7 @@
 }
 .select-work .work-image {
   width: 50%; 
+  object-fit: none;
 }
 .select-work .work-image .header-works {
   color: #fff;
@@ -230,10 +230,10 @@
   width: 96%;
   max-height: 600px;
 }
-.select-work.work3, .select-work.work3 .work-image .header-works{
+.select-work#work3, .select-work#work3 .work-image .header-works{
   color: #131313;
 }
-.select-work.work3 .work-summary .divided-line {
+.select-work#work3 .work-summary .divided-line {
   background-color: #131313;
 }
 /* select-work button */
@@ -255,7 +255,6 @@
 .select-work  .max-width .next-button  button:hover {
   transform:  scale(1.05);
 }
-
 
 /* Footer styling */
 .footer .max-width{
@@ -322,6 +321,58 @@
   font-size: 28px;
   font-weight: 300;
   padding-bottom: 16px;
+}
+
+/* service section styling */
+.services .max-width {
+  min-height: 680px;
+  background-color: #393939;
+  z-index: -1;
+}
+.services .card-title {
+  font-size: 36px;
+  color: #fff;
+  padding-top: 80px;
+}
+.services .max-width .cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 160px;
+  transition: all .3s ease-in-out;
+}
+.services .max-width .cards .card {
+  min-height: 300px;
+  width: 30%;
+  margin-right: 20px;
+  border-radius: 16px;
+  background-color: rgb(226, 226, 226);
+}
+.services .max-width .cards .card:hover {
+  transform: scale(1.05);
+  color: #393939;
+  background-color: #fff;
+  transition: all .3s ease-in-out;
+}
+.services .cards .card_icon-container {
+  width: 80%;
+  margin: auto;
+  padding-top: 40px;
+}
+
+.services .card h4 {
+  font-size: 22px;
+  margin: auto;
+  width: 80%;
+  margin-top: 16px;
+}
+.services .card p {
+  width: 80%;
+  margin: 20px auto 40px;
+  font-family: 'Open sans', sans-serif;
+  font-weight: 300;
 }
 
 /* contact table section styling */
