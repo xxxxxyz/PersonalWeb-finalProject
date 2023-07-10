@@ -1,0 +1,22 @@
+$primary-color: #D3b8a2;
+
+@import 'animate.css';
+
+@font-face {
+    font-family: 'Libre Baskerville';
+    src: url('../assets/fonts/LibreBaskerville-Regular.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Libre Baskerville';
+    src: url('../assets/fonts/LibreBaskerville-Bold.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Libre Baskerville';
+    src: url('../assets/fonts/LibreBaskerville-Italic.ttf') format('ttf');
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Libre Baskerville';
+}
