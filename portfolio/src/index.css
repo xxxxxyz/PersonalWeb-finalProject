@@ -1,0 +1,10 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Libre Baskerville', sans-serif;
+    color: #fff;
+    background: #d9c1ae;
+}
