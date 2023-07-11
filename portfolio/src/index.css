@@ -1,9 +1,10 @@
 body {
+    box-sizing: border-box;
     margin: 0;
-    font-family: 'Libre Baskerville', 'sans-serif';
-    color: #ffffff;
-    display: flex;
+    display: block;
+    width: 100%;
     overflow: hidden;
-    --webkit-font-smoothing: antialiased;
-    --moz-osx-font-smoothing: grayscale;
+    font-family: 'Libre Baskerville', sans-serif;
+    color: #fff;
+    background: #d9c1ae;
 }

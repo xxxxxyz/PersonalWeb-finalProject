@@ -1,22 +1,33 @@
-$primary-color: #D3b8a2;
+$primary-color: #D3B8A2;
 
 @import 'animate.css';
 
 @font-face {
-    font-family: 'Libre Baskerville';
-    src: url('../assets/fonts/LibreBaskerville-Regular.ttf') format('ttf');
+   font-family: 'Libre Baskerville';
+   src: '../assets/fonts/LibreBaskerville-Regular.ttf' format('ttf'); 
 }
 
 @font-face {
     font-family: 'Libre Baskerville';
-    src: url('../assets/fonts/LibreBaskerville-Bold.ttf') format('ttf');
-}
+    src: '../assets/fonts/LibreBaskerville-Bold.ttf' format('ttf'); 
+ }
 
-@font-face {
+ @font-face {
     font-family: 'Libre Baskerville';
-    src: url('../assets/fonts/LibreBaskerville-Italic.ttf') format('ttf');
-}
+    src: '../assets/fonts/LibreBaskerville-Italic.ttf' format('ttf'); 
+ }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Libre Baskerville';
-}
+ .root {
+   display: flex;
+   overflow-x: hidden;
+   flex-direction:column;
+   height: 800px;
+   left: 0;
+   top: 0;
+
+
+   .content {
+      height: 90%;
+      padding: 2em;
+   }
+ }
