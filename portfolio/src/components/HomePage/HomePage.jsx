@@ -1,14 +1,18 @@
 import React from 'react';
 
-import './styles.js';
-import Navbar from '../Navbar/Navbar';
-
+import './styles.scss';
+import { Link } from 'react-router-dom';
+import { Typography } from '@mui/material'
 
 const HomePage = () => {
   return (
-    <div>
-        <Navbar />
-    </div>
+     <div className='home-content'>
+        <div className='content-container'>
+          <div className='loading-line-h'></div>
+          <div className='loading-line-v'></div>
+          <Typography variant='h2' className='home-title'><span className='word-a'>Web Developer,</span> <br/><Link className='design-link' style={{textDecoration: 'none', color: '#fff'}}>Designer</Link></Typography>
+        </div>
+      </div>    
   )
 }
 
