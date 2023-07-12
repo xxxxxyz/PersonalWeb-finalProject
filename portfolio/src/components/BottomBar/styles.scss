@@ -1,0 +1,35 @@
+.bottom-container {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    margin: 0;
+    float: left;
+    width: 100%;
+    bottom: 30px;
+
+    .toggle-btn {
+        padding-left: 80px;
+    }
+
+    .bottom-list {
+        display: flex;
+        flex-direction: column;
+        padding-right: 80px;
+
+        .list-item {
+            text-decoration: none;
+            color: #fff;
+            padding-bottom: 10px;
+            font-size: 20px;
+            align-items: center;
+            text-align: right;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        
+    }
+}

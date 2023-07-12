@@ -1,0 +1,81 @@
+.home-content {
+   width: 100vw;
+   height: 100vh;
+   background: #d3b8a2;
+
+   .content-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 80%;
+      justify-content: flex-start;
+      position: absolute;
+      top: 120px;
+
+      .loading-line-h {
+         position: absolute;
+         width: 40%;
+         height: 0.6px;
+         background: #fff;
+         top: 13rem;
+         animation: line-h 1.5s ease-in-out 1;
+     }
+
+     .loading-line-v {
+         position: absolute;
+         left: 120px;
+         width: 0.6px;
+         height: 60%;
+         background: #fff;
+         animation: line-v 1.5s ease-in-out 1;
+     }
+
+      .home-title {
+         position: absolute;
+         top: 9.4rem;
+         left: 120px;
+         font-family: 'Libre Baskerville';
+
+         .design-link, .word-a {
+            animation: word 1.5s ease-in-out .2s 1;
+            animation-fill-mode: both;
+         }
+      }
+   
+   }
+}
+
+@keyframes line-h {
+   0% {
+      transform: translateX(0) scale(0);
+
+   }
+   100% {
+      transform: translateX(1) scale(1);
+   }
+   
+}
+
+@keyframes line-v {
+   0% {
+      transform: translateY(0) scale(0);
+
+   }
+   100% {
+      transform: translateY(1) scale(1);
+   }
+   
+}
+
+@keyframes word {
+   0% {
+      transform: translateY(-100px);
+      opacity: 0;
+
+   }
+   100% {
+      transform: translateY(0);
+      opacity: 1;
+   }
+   
+}
