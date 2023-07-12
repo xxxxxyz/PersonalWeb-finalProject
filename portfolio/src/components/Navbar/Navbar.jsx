@@ -13,7 +13,7 @@ const Navbar = () => {
         <Link className='logo'>
           <img src={Logo} alt='logo' className='logo-img'/>
         </Link>
-        <Button type='text' className='nav-btn'>Email</Button>
+        <Link type='text' className='nav-btn' sx={{padding: '4px 24px'}}>Email</Link>
       </div>
   )
 }
