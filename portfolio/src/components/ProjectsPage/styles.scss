@@ -1,17 +1,96 @@
-.projects-container {
-    display: block;
-    overflow-x: hidden;
-    flex-direction:column;
-    height: 100vh;
-    width: 100vw;
-    background: #484225;
-    left: 0;
-    top: 0;
- 
- 
-    .projects-content {
-       height: 100%;
-       position: relative;
-       padding: 0 4.4rem;
+.projects-content {
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: #484225;
+   font-family: 'Libre Baskerville';
+   
+    .projects-container {
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         flex-wrap: wrap;
+
+         .title-group {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 30px;
+
+
+            .projects-title {
+               font-weight: 300;
+            }
+
+            .back-btn {
+               width: 2rem;
+               height: 2rem;
+               transition: all .3s ease-in-out;
+               animation: btn 1s ease-in-out 2s;
+            }
+
+         }
+         
+         .projects-list {
+            display: flex;
+            flex-direction: column;
+            z-index: 2;
+            border-left: 0.6px solid #cfcfcf;
+
+            .project-name {
+               text-decoration: none;
+               color: #858885;
+               padding: 1.6rem 2rem 1.6rem 4rem;
+               font-size: 1.2rem;
+               border-bottom: 0.6px solid #cfcfcf;
+               transition: all .3s ease-in-out;
+
+               @for $i from 1 through 5 {
+                  &:nth-child(#{$i}) {
+                     animation: process 1s ease-out ($i/5 + 2s);
+                     animation-fill-mode: both;
+                  }
+               }
+
+               &:hover {
+                  color: #fff;
+                  border-bottom: 0.6px solid #fff;
+               }
+
+               .title-s {
+                  font-size: 10px;
+                  font-weight: 200;
+                  padding-right: 12px;
+                  text-align: right;
+               }
+            }
+         }
     }
   }
+
+@keyframes btn {
+   from {
+      transform: translate3d(0,50px,0);
+      opacity: 0;
+   }
+   to {
+      transform: translate3d(0,0,0);
+      opacity: 1;
+   }
+}
+
+
+
+@keyframes  process {
+   from {
+      transform: translate3d(0,50px,0);
+      opacity: 0;
+   }
+   to {
+      transform: translate3d(0,0,0);
+      opacity: 1;
+   }
+}

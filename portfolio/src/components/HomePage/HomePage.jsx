@@ -2,7 +2,8 @@ import React from 'react';
 
 import './styles.scss';
 import { Link } from 'react-router-dom';
-import { Typography } from '@mui/material'
+import { Typography } from '@mui/material';
+import BottomBar from '../BottomBar/BottomBar';
 
 const HomePage = () => {
   return (
@@ -12,6 +13,7 @@ const HomePage = () => {
           <div className='loading-line-v'></div>
           <Typography variant='h2' className='home-title'><span className='word-a'>Web Developer,</span> <br/><Link className='design-link' style={{textDecoration: 'none', color: '#fff'}}>Designer</Link></Typography>
         </div>
+        <BottomBar />
       </div>    
   )
 }
