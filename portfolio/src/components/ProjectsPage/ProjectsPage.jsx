@@ -33,7 +33,7 @@ const projectList = [
 ];
   
 
-const Projects = () => {
+const ProjectsPage = () => {
   return (
     <div className='projects-content'>
       <div className='projects-container'>
@@ -55,4 +55,4 @@ const Projects = () => {
   )
 }
 
-export default Projects;
+export default ProjectsPage;

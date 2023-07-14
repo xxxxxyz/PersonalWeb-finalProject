@@ -29,7 +29,7 @@
                width: 2rem;
                height: 2rem;
                transition: all .3s ease-in-out;
-               animation: btn 1s ease-in-out 2s;
+               animation: btn 1s ease-in-out;
             }
 
          }
@@ -50,7 +50,7 @@
 
                @for $i from 1 through 5 {
                   &:nth-child(#{$i}) {
-                     animation: process 1s ease-out ($i/5 + 2s);
+                     animation: process 1s ease-out ($i/5 + s);
                      animation-fill-mode: both;
                   }
                }
