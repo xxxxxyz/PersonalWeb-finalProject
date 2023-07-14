@@ -23,27 +23,12 @@ $primary-color: #D3B8A2;
 
    .outer-wrapper {
       position: absolute;
-      width: 100vh;
-      height: 100vw;
-      transform: rotate(-90deg) translateX(-100vh);
-      transform-origin: top left;
-      overflow-y: scroll;
-      overflow-x: hidden;
       z-index: -1;
-      scrollbar-width: none;
-      --ms-overflow-style: none;
    
-      ::-webkit-scrollbar {
-         display: none;
-      }
-
       .content-wrapper {
          display: flex;
          flex-direction: row;
          z-index: -1;
-         width: 200vw;
-         transform: rotate(90deg) translateY(-100vh);
-         transform-origin: top left;
        }
    
    }

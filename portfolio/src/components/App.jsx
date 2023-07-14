@@ -1,11 +1,10 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
-import { Grid } from '@mui/material';
 import HomePage from './HomePage/HomePage';
 import Navbar from './Navbar/Navbar';
 import ProjectsPage from './ProjectsPage/ProjectsPage';
-import BottomBar from './BottomBar/BottomBar';
+import Others from './Others/Others';
 
 import './App.scss';
 
@@ -13,12 +12,11 @@ function App() {
   return (
     <div className='main-container'>
       <Navbar />
-      <section className='outer-wrapper'>
-        <section className='content-wrapper'>
-          <HomePage />
-          <ProjectsPage />
-        </section>
-      </section>
+      <Routes>
+        <Route path='/' element={<HomePage />}/>
+        <Route path='/projects' element={<ProjectsPage />}/>
+        <Route path='/others' element={<Others />}/>
+      </Routes>
     </div>
   )
 }
