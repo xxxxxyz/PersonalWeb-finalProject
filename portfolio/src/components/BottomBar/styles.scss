@@ -8,6 +8,8 @@
     float: left;
     width: 100%;
     bottom: 12px;
+    animation: bot 1s ease-in-out;
+    animation-fill-mode: both;
 
     .toggle-btn {
         padding-left: 80px;
@@ -31,5 +33,16 @@
             }
         }
         
+    }
+}
+
+@keyframes bot {
+    from {
+        transform: translate3d(0,-40px,0);
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1;
     }
 }

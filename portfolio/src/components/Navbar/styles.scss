@@ -10,10 +10,13 @@
     padding: 2rem 0;
     float: left;
     width: 100%;
+    animation: logo 1s ease-in-out;
+    animation-fill-mode: both;
 
     .logo-img {
         width: 3rem;
         margin-left: 80px;
+       
     }
 
     .nav-btn {
@@ -24,13 +27,22 @@
         align-items: center;
         font-size: 16px;
         text-transform: capitalize;
-        transition: all .3s ease-in-out;
 
         &:hover {
             text-decoration: underline;
-            // text-decoration-style: wavy;
         }
     }
     
+}
 
+@keyframes logo {
+    from {
+        transform: translate3d(0,40px,0);
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+    
 }

@@ -5,7 +5,6 @@ import { usesTheme } from '@mui/material/styles';
 
 import './styles.scss';
 import Logo from '../../assets/images/Asset 19@4x-8.png';
-import HomePage from '../HomePage/HomePage';
 
 
 const Navbar = () => {

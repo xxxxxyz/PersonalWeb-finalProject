@@ -18,30 +18,32 @@
          height: 0.6px;
          width: 78vw;
          background: #fff;
-         animation: line-h 1.5s ease-in-out 1;
-     }
-
-     .loading-line-v {
+         animation: line-h 1.5s ease-in-out .6s 1;
+         animation-fill-mode: both;
+      }
+      
+      .loading-line-v {
          position: absolute;
          left: 120px;
          top: 24vh;
          width: 0.6px;
          height: 50vh;
          background: #fff;
-         animation: line-v 1.5s ease-in-out 1;
+         animation: line-v 1.5s ease-in-out .8s 1;
+         animation-fill-mode: both;
      }
 
 
      .home-title {
       position: absolute;
-      top: 38vh;
+      top: 39.3vh;
       padding-left: 120px;
       float: left;
       font-size: 4.4rem;
       font-family: 'Libre Baskerville';
 
       .design-link, .word-a {
-         animation: word 1.5s ease-in-out .2s 1;
+         animation: word 1.8s ease-in-out 2s 1;
          animation-fill-mode: both;
       }
    }
@@ -75,12 +77,12 @@
 
 @keyframes word {
    from {
-      transform: translateY(-100px);
+      transform: translate3d(0, 50px,0);
       opacity: 0;
 
    }
    to {
-      transform: translateY(0);
+      transform: translate3d(0,0,0);
       opacity: 1;
    }
    
