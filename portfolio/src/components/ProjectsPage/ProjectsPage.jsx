@@ -44,7 +44,7 @@ const ProjectsPage = () => {
           </svg>
         </div>
         <div className='projects-list'>
-            <Link className='project-name'><span className='title-s'>Website</span><span>Filmpire</span></Link>
+            <Link className='project-name' to={<FilmpirePage />}><span className='title-s'>Website</span><span>Filmpire</span></Link>
             <Link className='project-name'><span className='title-s'>Website</span><span>Portfolio</span></Link>
             <Link className='project-name'><span className='title-s'>Design</span><span>B & T Online</span></Link>
             <Link className='project-name'><span className='title-s'>Design-APP</span><span>Event-host</span></Link>
