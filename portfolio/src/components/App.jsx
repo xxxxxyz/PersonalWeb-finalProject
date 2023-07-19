@@ -7,6 +7,7 @@ import ProjectsPage from './ProjectsPage/ProjectsPage';
 import Others from './Others/Others';
 
 import './App.scss';
+import FilmpirePage from './FilmpirePage/FilmpirePage';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/' element={<HomePage />}/>
         <Route path='/projects' element={<ProjectsPage />}/>
         <Route path='/others' element={<Others />}/>
+        <Route path='/filmpire' element={<FilmpirePage />}/>
       </Routes>
     </div>
   )
