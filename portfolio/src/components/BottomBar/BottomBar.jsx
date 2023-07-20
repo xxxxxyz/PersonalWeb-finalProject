@@ -1,9 +1,7 @@
 import React from 'react';
-import { Route, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import './styles.scss';
-
-import ProjectsPage from '../ProjectsPage/ProjectsPage';
 
 const  BottomBar = () => {
   const mode = 'dark';
@@ -18,7 +16,7 @@ const  BottomBar = () => {
         </svg>
       </div>
       <nav className='bottom-list'>
-        <NavLink path="/projects" to="/projects" className='list-item'>Projects</NavLink>
+        <NavLink  className='list-item' to="/projects">Projects</NavLink>
         <NavLink className='list-item' to="/others">Others</NavLink>
       </nav>
     </div>
