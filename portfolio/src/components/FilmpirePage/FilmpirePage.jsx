@@ -8,7 +8,6 @@ const FilmpirePage = () => {
   return (
     <Grid container className='project-content'>
           <Grid container item className='content'>
-            
             <div className='title-l' ><span className='title-s'>Website</span> Filmpire</div>
             <img className="project-img" src='https://github.com/xxxxxyz/project-filmpire/blob/main/src/assets/images/Dark%20Mode.png?raw=true' alt='screen-cut'/>
             <div className='demo'>

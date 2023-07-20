@@ -49,9 +49,9 @@ const ProjectsPage = () => {
         <div className='projects-list'>
             <NavLink className='project-name' to="/filmpire"><span className='title-s'>Website</span><span>Filmpire</span></NavLink>
             <NavLink className='project-name' to="/"><span className='title-s'>Website</span><span>Portfolio</span></NavLink>
-            <NavLink className='project-name' to="/"><span className='title-s'>Design</span><span>B & T Online</span></NavLink>
-            <NavLink className='project-name' to="/"><span className='title-s'>Design-APP</span><span>Event-host</span></NavLink>
-            <NavLink className='project-name' to="/"><span className='title-s'>Brand</span><span>ULA</span></NavLink>
+            <NavLink className='project-name' to="https://xiayuze0406.wixsite.com/zoeyxia/featured-project"><span className='title-s'>Design</span><span>B & T Online</span></NavLink>
+            <NavLink className='project-name' to="https://xiayuze0406.wixsite.com/zoeyxia/general-8"><span className='title-s'>Design-APP</span><span>Event-host</span></NavLink>
+            <NavLink className='project-name' to="https://xiayuze0406.wixsite.com/zoeyxia/projects-3-1"><span className='title-s'>Brand</span><span>ULA</span></NavLink>
         </div>        
       </div>
     </div>
