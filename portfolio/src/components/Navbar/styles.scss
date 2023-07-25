@@ -2,6 +2,7 @@
     display: flex;
     position: absolute;
     background: transparent;
+    font-family: 'Gaegu', cursive;;
     top: 0;
     left: 0;
     width: 100%;
@@ -13,6 +14,7 @@
     animation: logo 1s ease-in-out;
     animation-fill-mode: both;
 
+
     .logo {
         margin-left: 6%;
     }
@@ -20,16 +22,18 @@
     nav {
         margin-right: 6%;
         transition: all .3s ease-in-out;
+        font-weight: 300;
+        font-size: 12px;
     }
 
     .nav-item {
         margin-left: 2.4rem;
         text-decoration: none;
-        color: #333;
-        font-size: 1.2rem;
+        color: #777777;
 
         &:hover {
             text-decoration: underline;
+            color: #111;
         }
     }
 

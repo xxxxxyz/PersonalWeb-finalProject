@@ -3,14 +3,14 @@
     position: absolute;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 0;
+    padding: 1.8rem 0;
     margin: 0;
     float: left;
     width: 100%;
     bottom: 12px;
     animation: bot 1s ease-in-out;
     animation-fill-mode: both;
-
+    
     .toggle-btn {
         padding-left: 80px;
     }
@@ -24,9 +24,10 @@
             text-decoration: none;
             color: #333;
             padding-bottom: 10px;
-            font-size: 20px;
+            font-size: 16px;
             align-items: center;
             text-align: right;
+            font-family: 'Gaegu', cursive;
 
             &:hover {
                 text-decoration: underline;

@@ -1,19 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './styles.scss';
 import { Link } from 'react-router-dom';
 import BottomBar from '../BottomBar/BottomBar';
+import AnimatedLetters from '../AnimatedLetters/AnimatedStyles';
 
 const HomePage = () => {
+  const [letterClass, setLetterClass] = useState('text-animate');
+  const nameArray = ['Z', 'o', 'e'];
+  const jobArray = ['w', 'e', 'b', ' ', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r', '.'];
+
   return (
-     <div className='home-content'>
-        <div className='content-container'>
-          <div className='loading-line-h'></div>
-          <div className='loading-line-v'></div>  
-          <div className='home-title'><span className='word-a'>Web Developer,</span> <br/><Link className='design-link' style={{textDecoration: 'none', color: '#333'}}>Designer</Link></div>
-        </div>
-        <BottomBar />
-      </div>    
+    <div className='home-content container'>
+      <div className='home-title'>
+        <h1>Hi, I'm <AnimatedLetters letterClass={letterClass} strArray={nameArray} index={11}/><br/>
+         {/* <AnimatedLetters letterClass={letterClass} strArray={jobArray} index={25}/> */}
+        </h1>
+        <h2>Frontend developer | Designer</h2>
+        <Link to="/contact" className='contact-btn'>Contact me</Link>
+      </div>
+      <BottomBar />
+    </div>    
   )
 }
 

@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
       <div className='navbar'>
         <Link className='logo' to='/' onClick={() => {}} style={{textDecoration: 'none',  color: '#333', fontSize: '2rem', }}>
-          <div>yz.</div>
+          <div style={{fontFamily: 'Gaegu'}}>yz.</div>
         </Link>
         <nav>
           <NavLink to='/' exact='true' activeclassname="active" className='nav-item' onClick={() => {}}>Home</NavLink>

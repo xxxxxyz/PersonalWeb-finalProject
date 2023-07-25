@@ -5,7 +5,6 @@ import HomePage from './HomePage/HomePage';
 import Navbar from './Navbar/Navbar';
 import ProjectsPage from './ProjectsPage/ProjectsPage';
 import Others from './Others/Others';
-import FilmpirePage from './FilmpirePage/FilmpirePage';
 
 import './App.scss';
 
@@ -13,11 +12,10 @@ function App() {
   return (
     <div className='main-container'>
       <Navbar />
-      <Routes>
+      <Routes className='main-content'>
         <Route path='/' element={<HomePage />}/>
         <Route path='/projects' element={<ProjectsPage />}/>
         <Route path='/others' element={<Others />}/>
-        <Route path='/filmpire' element={<FilmpirePage />}/>
       </Routes>
     </div>
   )
