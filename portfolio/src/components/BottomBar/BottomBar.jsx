@@ -16,8 +16,8 @@ const  BottomBar = () => {
         </svg>
       </div>
       <div className='bottom-list'>
-        <Link  className='list-item' to="/projects">Linkedin</Link>
-        <Link className='list-item' to="/others">Resume</Link>
+        <a  className='list-item' href="https://www.linkedin.com/in/zoe-x-249a94207/" >Linkedin</a>
+        <a className='list-item' to="/others">Resume</a>
       </div>
     </div>
   )
