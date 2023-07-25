@@ -1,19 +1,20 @@
 import React from 'react';
-import { Link, Route, Routes } from 'react-router-dom';
-import { usesTheme } from '@mui/material/styles';
-
+import { Link, NavLink } from 'react-router-dom';
 
 import './styles.scss';
-import Logo from '../../assets/images/Asset 19@4x-8.png';
-
 
 const Navbar = () => {
   return (
       <div className='navbar'>
-        <Link className='logo' to="/">
-          <img src={Logo} alt='logo' className='logo-img'/>
+        <Link className='logo' to='/' onClick={() => {}} style={{textDecoration: 'none',  color: '#333', fontSize: '2rem', }}>
+          <div>yz.</div>
         </Link>
-        <Link type='text' className='nav-btn' sx={{padding: '4px 24px'}}>Email</Link>
+        <nav>
+          <NavLink to='/' exact='true' activeclassname="active" className='nav-item' onClick={() => {}}>Home</NavLink>
+          <NavLink to='/projects' className='nav-item'>Projects</NavLink>
+          <NavLink to='/design' className='nav-item'>Design</NavLink>
+          <NavLink to='/contact' className='nav-item'>Contact</NavLink>
+        </nav>
       </div>
   )
 }

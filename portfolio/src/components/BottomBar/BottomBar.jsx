@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import './styles.scss';
 
@@ -15,10 +15,10 @@ const  BottomBar = () => {
             <path d="M11.6667 22.75C14.0829 22.75 16.0417 20.7912 16.0417 18.375C16.0417 15.9588 14.0829 14 11.6667 14C9.25044 14 7.29169 15.9588 7.29169 18.375C7.29169 20.7912 9.25044 22.75 11.6667 22.75Z" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </div>
-      <nav className='bottom-list'>
-        <NavLink  className='list-item' to="/projects">Projects</NavLink>
-        <NavLink className='list-item' to="/others">Others</NavLink>
-      </nav>
+      <div className='bottom-list'>
+        <Link  className='list-item' to="/projects">Linkedin</Link>
+        <Link className='list-item' to="/others">Resume</Link>
+      </div>
     </div>
   )
 }

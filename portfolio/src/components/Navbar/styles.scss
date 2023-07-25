@@ -2,37 +2,38 @@
     display: flex;
     position: absolute;
     background: transparent;
+    top: 0;
+    left: 0;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
-    top: 0;
-    z-index: 10;
     margin: 0;
-    padding: 2rem 0;
-    float: left;
-    width: 100%;
+    padding: 1.6rem 0;
+    z-index: 10;
     animation: logo 1s ease-in-out;
     animation-fill-mode: both;
 
-    .logo-img {
-        width: 3rem;
-        margin-left: 80px;
-       
+    .logo {
+        margin-left: 6%;
     }
 
-    .nav-btn {
-        font-family: "Libre Baskerville", sans-serif;
+    nav {
+        margin-right: 6%;
+    }
+
+    .nav-item {
+        margin-left: 2.4rem;
         text-decoration: none;
-        margin-right: 80px;
-        color: #fff;
-        align-items: center;
-        font-size: 16px;
-        text-transform: capitalize;
+        color: #333;
+        font-size: 1.2rem;
 
         &:hover {
             text-decoration: underline;
         }
     }
-    
+
+
+
 }
 
 @keyframes logo {

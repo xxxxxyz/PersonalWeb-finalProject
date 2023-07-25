@@ -5,9 +5,9 @@ import HomePage from './HomePage/HomePage';
 import Navbar from './Navbar/Navbar';
 import ProjectsPage from './ProjectsPage/ProjectsPage';
 import Others from './Others/Others';
+import FilmpirePage from './FilmpirePage/FilmpirePage';
 
 import './App.scss';
-import FilmpirePage from './FilmpirePage/FilmpirePage';
 
 function App() {
   return (
