@@ -13,8 +13,15 @@ const HomePage = () => {
   return (
     <div className='home-content container'>
       <div className='home-title'>
-        <h1>Hi, I'm <AnimatedLetters letterClass={letterClass} strArray={nameArray} index={11}/><br/>
-         {/* <AnimatedLetters letterClass={letterClass} strArray={jobArray} index={25}/> */}
+        <h1>
+          <span className={letterClass}>H</span>
+          <span className={letterClass}>i</span>
+          <span className={letterClass}>,</span>
+          <span className={letterClass}>I</span>
+          <span className={letterClass}>'</span>
+          <span className={letterClass}>m</span>
+          <AnimatedLetters letterClass={letterClass} strArray={nameArray} index={11}/><br/>
+          <AnimatedLetters letterClass={letterClass} strArray={jobArray} index={25}/>
         </h1>
         <h2>Frontend developer | Designer</h2>
         <Link to="/contact" className='contact-btn'>Contact me</Link>
