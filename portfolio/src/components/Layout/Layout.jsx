@@ -1,6 +1,7 @@
 import React from 'react';
-import {Box, Grid, Typography, Button, colors } from '@mui/material';
+import { Outlet } from 'react-router-dom';
 
+import {Box, Grid, Typography, Button, colors } from '@mui/material';
 
 import './styles.scss';
 import Sidebar from '../Sidebar/Sidebar';
@@ -21,6 +22,7 @@ const Layout = () => {
                         </Grid>
                         <Grid item xs={7} className='fake-search-bar'>www.zoeyz.com</Grid>
                     </Grid>
+                    <Outlet />
                 </Box>
             </Grid>
         </Grid>

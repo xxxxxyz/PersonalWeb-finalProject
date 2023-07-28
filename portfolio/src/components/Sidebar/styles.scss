@@ -1,42 +1,39 @@
-.sidebar {
-   width: 90px;
-   height: 100%;
-   position: absolute;
-   top: 0;
-   z-index: 3;
-   min-height: 500px;
+.nav-bar {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    height: 100%;
+    z-index: 3;
+    min-height: 500px;
 
     .logo {
-        display: block;
-        margin-top: 20%;
     }
 
-    nav {
+    .nav-container {
         display: flex;
         flex-direction: column;
-        text-align: left;
-        position: absolute;
-        top: 45%;
         transition: all .3s ease-in-out;
         font-weight: 300;
         font-size: 12px;
     }
 
     .nav-item {
-        margin-bottom: 40px;
+        text-align: left;
+        height: 8vh;
         text-decoration: none;
         color: #777777;
-        padding-left: 8px;
+        line-height: 1;
+
 
         &:hover {
             color: #333;
-            font-size: 16px;
-            border-left: 1px solid #333;
+            font-size: 14px;
+            // border-left: 1px solid #333;
             transition: all .3s ease-in-out;
         }
     }
-
-
 
 }
 
