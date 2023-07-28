@@ -1,38 +1,6 @@
 import React from 'react';
-import { Route, Routes, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './styles.scss';
-
-import FilmpirePage from '../FilmpirePage/FilmpirePage';
-
-const projectList = [
-  {
-    id:"1",
-    type:"Website",
-    projectName:"Filmpire",
-  },
-  {
-    id:"2",
-    type:"Website",
-    projectName:"Filmpire",
-  },
-  {
-    id:"1",
-    type:"Website",
-    projectName:"Filmpire",
-  },
-  {
-    id:"1",
-    type:"Website",
-    projectName:"Filmpire",
-  },
-  {
-    id:"1",
-    type:"Website",
-    projectName:"Filmpire",
-  },
-
-];
-  
 
 const ProjectsPage = () => {
   
@@ -47,7 +15,6 @@ const ProjectsPage = () => {
         </div>
         
         <div className='projects-list'>
-            <NavLink className='project-name' to="/filmpire"><span className='title-s'>Website</span><span>Filmpire</span></NavLink>
             <NavLink className='project-name' to="/"><span className='title-s'>Website</span><span>Portfolio</span></NavLink>
             <NavLink className='project-name' to="https://xiayuze0406.wixsite.com/zoeyxia/featured-project"><span className='title-s'>Design</span><span>B & T Online</span></NavLink>
             <NavLink className='project-name' to="https://xiayuze0406.wixsite.com/zoeyxia/general-8"><span className='title-s'>Design-APP</span><span>Event-host</span></NavLink>
