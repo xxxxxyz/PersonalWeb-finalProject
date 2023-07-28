@@ -4,7 +4,7 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   background: #484225;
+   // background: #484225;
    font-family: 'Libre Baskerville';
    
     .projects-container {
@@ -49,7 +49,7 @@
                color: #858885;
                padding: 1.6rem 4rem;
                font-size: 1.2rem;
-               border-bottom: 0.6px solid #cfcfcf;
+               // border-bottom: 0.6px solid #cfcfcf;
                transition: all .3s ease-in-out;
 
                @for $i from 1 through 5 {
@@ -60,8 +60,8 @@
                }
 
                &:hover {
-                  color: #fff;
-                  border-bottom: 0.6px solid #fff;
+                  color: #222;
+                  // border-bottom: 0.6px solid #fff;
                }
 
                .title-s {
