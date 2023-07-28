@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import './styles.scss';
 import { Link } from 'react-router-dom';
 import BottomBar from '../BottomBar/BottomBar';
+import { Typography } from '@mui/material';
 import AnimatedLetters from '../AnimatedLetters/AnimatedStyles';
 
 const HomePage = () => {
@@ -13,6 +14,12 @@ const HomePage = () => {
   return (
     <div className='home-content container'>
       <div className='home-title'>
+          <Typography variant='h3' className='title' sx={{margin:'auto', textAlign:'center', marginTop: '10%', maxWidth: '400px'}}>Hi, I'm Zoe <br/> a frontend developer & designer.</Typography>
+
+
+
+
+
         <h1>
           <span className={letterClass}>H</span>
           <span className={letterClass}>i</span>
