@@ -55,10 +55,10 @@ const Projects = () => {
                     <StyledTabs centered onChange={handleChange} value={value} sx={{marginTop: '6%'}}>
                         <StyledTab 
                         value='1'
-                        className='label-item' label='Web' sx={{fontFamily: 'Outfit', textTransform: 'Capitalize'}}></StyledTab>
+                        className='label-item' label='Web' sx={{fontFamily: 'Outfit', textTransform: 'Capitalize', fontWeight: '300'}}></StyledTab>
                         <StyledTab 
                         value='2'
-                        className='label-item' label='Design' sx={{fontFamily: 'Outfit', textTransform: 'Capitalize'}}></StyledTab>
+                        className='label-item' label='Design' sx={{fontFamily: 'Outfit', textTransform: 'Capitalize', fontWeight: '300'}}></StyledTab>
                     </StyledTabs>
                 </Box>
                 <Box sx={{padding: '0'}}>

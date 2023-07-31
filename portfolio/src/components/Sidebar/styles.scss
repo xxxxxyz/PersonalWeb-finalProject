@@ -8,10 +8,7 @@
     z-index: 3;
     min-height: 500px;
 
-    .logo {
-    }
-
-    .nav-container {
+        .nav-container {
         display: flex;
         flex-direction: column;
         transition: all .3s ease-in-out;
@@ -25,14 +22,6 @@
         text-decoration: none;
         color: #777777;
         line-height: 1;
-
-
-        &:hover {
-            color: #333;
-            font-size: 14px;
-            // border-left: 1px solid #333;
-            transition: all .3s ease-in-out;
-        }
     }
 
     .active {

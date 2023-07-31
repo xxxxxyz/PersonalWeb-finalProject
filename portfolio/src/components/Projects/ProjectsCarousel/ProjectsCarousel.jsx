@@ -21,13 +21,13 @@ const ProjectsCarousel = () => {
     <Box>
         <Slider {...settings}>
           <div className='project-card card1'>
-            {<ProjectCard title='Project_1' content='This is a mockup project.'/>}
+            {<ProjectCard title='Filmpire' content='This is a mockup project.' imageUrl='https://images.pexels.com/photos/3137890/pexels-photo-3137890.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'/>}
           </div>
           <div className='project-card card2'>
-          {<ProjectCard title='Project_2' content='This is a mockup project.'/>}
+          {<ProjectCard title='Coming Soon' content='This is a mockup project.' imageUrl='https://images.pexels.com/photos/12743405/pexels-photo-12743405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'/>}
           </div>
           <div className='project-card card3'>
-          {<ProjectCard title='Project_3' content='This is a mockup project.'/>}
+          {<ProjectCard title='Thank you!' content='This is a mockup project.' imageUrl='https://images.pexels.com/photos/8250916/pexels-photo-8250916.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'/>}
           </div>
         </Slider>
       </Box>
