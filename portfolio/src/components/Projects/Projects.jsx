@@ -59,15 +59,11 @@ const Projects = () => {
                         <StyledTab 
                         value='2'
                         className='label-item' label='Design' sx={{fontFamily: 'Outfit', textTransform: 'Capitalize'}}></StyledTab>
-                        <StyledTab 
-                        value='3'
-                        className='label-item' label='Other' sx={{fontFamily: 'Outfit', textTransform: 'Capitalize'}}></StyledTab>
                     </StyledTabs>
                 </Box>
                 <Box sx={{padding: '0'}}>
                   <TabPanel  className='tab-panel' value='1'><ProjectsCarousel/></TabPanel>
                   <TabPanel className='tab-panel' value='2'>Item 2</TabPanel>
-                  <TabPanel className='tab-panel' value='3'>Item 3</TabPanel>
                 </Box>
                 
             </TabContext>

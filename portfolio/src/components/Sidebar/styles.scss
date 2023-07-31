@@ -35,6 +35,12 @@
         }
     }
 
+    .active {
+        color: #333;
+        font-size: 14px;
+        transition: all .3s ease-in-out;
+    }
+
 }
 
 @keyframes logo {

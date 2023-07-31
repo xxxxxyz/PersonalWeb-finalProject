@@ -11,7 +11,7 @@ const ProjectCard = ({title, content}) => {
       <Box className='card-content-container'>
         <Typography variant='h5' className='card-title' gutterBottom>{title}</Typography>
           <Typography variant='body2' color='text.secondary' className='card-content' gutterBottom>{content}</Typography>
-          <Link to='/' style={{fontFamily: 'Outfit', textDecoration: 'underline', color: '#fff',fontWeight: '300', fontSize: '12px'}}>More</Link>
+          <Link to='/' style={{fontFamily: 'Outfit', textDecoration: 'underline', color: '#fff',fontWeight: '300', fontSize: '10px'}}>More</Link>
       </Box>
         
     </Box>
