@@ -1,0 +1,24 @@
+.slick-arrow.slick-prev {
+    left: 15px;
+    z-index: 3;
+
+    &:before {
+        color: #343434;
+    }
+}
+
+.slick-arrow.slick-next {
+    right: 15px;
+
+    &:before {
+        color: #343434;
+    }
+}
+
+// .slick-slide {
+//     width: 500px;
+// }
+
+.project-card {
+    width: 400px !important;
+}

@@ -1,0 +1,42 @@
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    align-self: flex-end;
+    min-height: 240px;
+    max-width: 480px;
+    margin: 20px;
+    border-radius: 8px;
+    background: #fafafa;
+    background-image: url('https://images.pexels.com/photos/69432/pexels-photo-69432.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size: 500px;
+    box-shadow: 10px 10px 8px rgba(109, 109, 109, 0.3);
+    background-position: center;
+
+    .card-content-container {
+        height: 30%;
+        width: 100%;
+        background: rgba(84, 84, 84, 0.8);
+        font-family: 'Outfit', sans-serif;
+        text-align: left;
+        border-radius: 0 0 10px 10px;
+        padding: 12px 20px 16px;
+
+        .card-title {
+            position: relative;    
+            font-size: 20px;
+            color: #fff;
+    
+        }
+        
+        .card-content {
+            line-height: 1.4;
+            font-size: 12px;
+            font-weight: 300;
+            color: #fff;
+        }
+    }
+    
+
+}
+

@@ -4,6 +4,8 @@ import TabPanel from '@mui/lab/TabPanel';
 import TabContext from '@mui/lab/TabContext';
 import { styled } from '@mui/material/styles';
 
+import ProjectsCarousel from './ProjectsCarousel/ProjectsCarousel';
+
 import './styles.scss';
 
 const StyledTabs = styled((props) => (
@@ -47,8 +49,8 @@ const Projects = () => {
     }
 
     return (
-        <Box sx={{background: '#f7f7f7'}}>
-            <TabContext value={value}>
+        <Box sx={{background: '#f7f7f7', marginLeft: 'auto', marginRight: 'auto'}}>
+            <TabContext value={value} sx={{maxWidth: '60%'}}>
                 <Box>
                     <StyledTabs centered onChange={handleChange} value={value} sx={{marginTop: '6%'}}>
                         <StyledTab 
@@ -62,9 +64,12 @@ const Projects = () => {
                         className='label-item' label='Other' sx={{fontFamily: 'Outfit', textTransform: 'Capitalize'}}></StyledTab>
                     </StyledTabs>
                 </Box>
-                <TabPanel value='1'>Item 1</TabPanel>
-                <TabPanel value='2'>Item 2</TabPanel>
-                <TabPanel value='3'>Item 3</TabPanel>
+                <Box sx={{padding: '0'}}>
+                  <TabPanel  className='tab-panel' value='1'><ProjectsCarousel/></TabPanel>
+                  <TabPanel className='tab-panel' value='2'>Item 2</TabPanel>
+                  <TabPanel className='tab-panel' value='3'>Item 3</TabPanel>
+                </Box>
+                
             </TabContext>
              
         </Box>
