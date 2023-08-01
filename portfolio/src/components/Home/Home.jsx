@@ -23,6 +23,7 @@ const Home = () => {
         direction={'vertical'}
         slidesPerView={1}
         spaceBetween={30}
+        speed={500}
         keyboard={{
           enabled: true,
         }}
