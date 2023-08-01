@@ -3,9 +3,7 @@ import React from 'react';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 import { Button } from '@mui/material';
-import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
-
-import './styles.scss';
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 
 const theme = createTheme({
   palette: {
@@ -27,7 +25,7 @@ const theme = createTheme({
 const ButtonCustom = () => {
   return (
     <ThemeProvider theme={theme}>
-        <Button color="primary" variant='outlined' className='home-cta' startIcon={<KeyboardDoubleArrowDownIcon />}><span style={{fontFamily:'Outfit'}} className='btn-name'> Scroll down</span></Button>
+        <Button color="primary" variant='outlined' className='home-cta' startIcon={<EmailOutlinedIcon />}><span style={{fontFamily:'Outfit', fontSize: '14px',textTransform: 'capitalize'}} className='btn-name'> Contact me</span></Button>
     </ThemeProvider>
   )
 }
