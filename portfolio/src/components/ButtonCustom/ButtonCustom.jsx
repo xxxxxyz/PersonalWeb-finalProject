@@ -8,9 +8,9 @@ import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 const theme = createTheme({
   palette: {
     primary: {
-      light: '#5c5c5c',
-      main: '#343434',
-      dark: '#242424', 
+      light: '#757575',
+      main: '#535353',
+      dark: '#3a3a3a', 
       contrastText: '#fff',
     },
     secondary: {
@@ -25,7 +25,7 @@ const theme = createTheme({
 const ButtonCustom = () => {
   return (
     <ThemeProvider theme={theme}>
-        <Button color="primary" variant='outlined' className='home-cta' startIcon={<EmailOutlinedIcon />}><span style={{fontFamily:'Outfit', fontSize: '14px',textTransform: 'capitalize'}} className='btn-name'> Contact me</span></Button>
+        <Button color="primary" variant='contained' className='home-cta' startIcon={<EmailOutlinedIcon />}><span style={{fontFamily:'Outfit', fontSize: '14px',textTransform: 'capitalize'}} className='btn-name'> Contact me</span></Button>
     </ThemeProvider>
   )
 }
