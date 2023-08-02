@@ -1,13 +1,10 @@
 import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Box, Typography, IconButton } from '@mui/material';
+
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
-
-import ButtonCustom from '../ButtonCustom/ButtonCustom';
-// import AnimatedLetters from '../AnimatedLetters/AnimatedStyles';
-
 
 import 'swiper/scss';
 import 'swiper/scss/pagination';
@@ -17,10 +14,7 @@ import './styles.scss';
 import { Keyboard, Mousewheel, Pagination } from 'swiper/modules';
 
 const Home = () => {
-  // const [letterClass, setLetterClass] = useState('text-animate');
-  // const nameArray = ['Z', 'o', 'e'];
-  // const jobArray = ['w', 'e', 'b', ' ', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r', '.'];
-
+  
   return (
     <>
       <Swiper
@@ -40,7 +34,7 @@ const Home = () => {
       >
         <SwiperSlide>
           <Box className='slide'>
-            <Typography variant='h4' sx={{fontFamily: 'Outfit', fontWeight: '300', marginBottom: '30px', marginTop: '40px'}}>Hi, I'm Zoe,<br/> web developer & designer</Typography>
+            <Typography variant='h4' sx={{fontFamily: 'Outfit', fontWeight: '300', marginBottom: '30px'}}>Hi, I'm Zoe,<br/> web developer & designer</Typography>
             <Box>
               <Typography variant='body2' sx={{fontFamily: 'Outfit', fontWeight: '300',color: '#777'}}>Scroll down</Typography>
             </Box>
