@@ -1,6 +1,10 @@
 import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, IconButton } from '@mui/material';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
+
 import ButtonCustom from '../ButtonCustom/ButtonCustom';
 // import AnimatedLetters from '../AnimatedLetters/AnimatedStyles';
 
@@ -36,21 +40,28 @@ const Home = () => {
       >
         <SwiperSlide>
           <Box className='slide'>
-            <Typography variant='h4' sx={{fontFamily: 'Outfit', fontWeight: '300', marginBottom: '20px'}}>Hi, I'm Zoe,<br/> web developer & designer</Typography>
-            <ButtonCustom />
+            <Typography variant='h4' sx={{fontFamily: 'Outfit', fontWeight: '300', marginBottom: '30px', marginTop: '40px'}}>Hi, I'm Zoe,<br/> web developer & designer</Typography>
+            <Box>
+              <Typography variant='body2' sx={{fontFamily: 'Outfit', fontWeight: '300',color: '#777'}}>Scroll down</Typography>
+            </Box>
           </Box>
         </SwiperSlide>
         <SwiperSlide>
           <Box className='slide'>
           <Typography variant='h5' sx={{fontFamily: 'Outfit', marginBottom: '12px', fontWeight: '300'}}>Thanks for visiting my page!</Typography>
-          <Typography variant='body2' sx={{fontFamily: 'Outfit', fontWeight: '100', maxWidth:'480px',lineHeight: '1.6'}}>I am a dedicated designer working as a freelance focusing on digital material design. I am working on an internal used APP as the UI/UX designer, while I am still looking for a similar fixed role as possible.<br />
+          <Typography variant='body2' sx={{fontFamily: 'Outfit', fontWeight: '300',color: '#777', maxWidth: '460px',}}>I am a dedicated designer working as a freelance focusing on digital material design.<br />
           I love to learn new things related to design, and I join many design challenges as a daily practice. My goal is to be a skilled designer who can help ppl solve problems with great ideas.<br />
-          Please eMAIL me or find me on LinkedIn! I will be happy to talk with you about design or relevant things.</Typography>
+          Please <a href='/' style={{color: '#333'}}>eMAIL</a> me or find me on LinkedIn! I will be happy to talk with you about design or relevant things.</Typography>
           </Box>
         </SwiperSlide>
         <SwiperSlide>
           <Box className='slide'>
-            Slide 3
+            <Typography variant='h5' sx={{fontFamily: "Gaegu", marginRight: '12px'}}>Find me on:</Typography>
+            <Box>
+              <IconButton><InstagramIcon /></IconButton>
+              <IconButton><LinkedInIcon /></IconButton>
+              <IconButton><TwitterIcon /></IconButton>
+            </Box>
           </Box>
         </SwiperSlide>
       </Swiper>

@@ -16,14 +16,6 @@ import  './styles.scss';
 import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 
 const ProjectsCarousel = () => {
-    // const settings = {
-    //     dots: true,
-    //     infinite: true,
-    //     speed: 500,
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //   };
-
   return (
     <Box className="tab-container">
       <Swiper
