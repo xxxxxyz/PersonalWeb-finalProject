@@ -3,7 +3,7 @@ import React from 'react';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 import { Button } from '@mui/material';
-import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const theme = createTheme({
   palette: {
@@ -25,7 +25,7 @@ const theme = createTheme({
 const ButtonCustom = () => {
   return (
     <ThemeProvider theme={theme}>
-        <Button color="primary" variant='contained' className='home-cta' startIcon={<EmailOutlinedIcon />}><span style={{fontFamily:'Outfit', fontSize: '14px',textTransform: 'capitalize'}} className='btn-name'> Contact me</span></Button>
+        <Button color="primary" variant='text' className='home-cta' startIcon={<ExpandMoreIcon />}><span style={{fontFamily:'Outfit', fontSize: '14px',textTransform: 'capitalize'}} className='btn-name'>Scroll down</span></Button>
     </ThemeProvider>
   )
 }

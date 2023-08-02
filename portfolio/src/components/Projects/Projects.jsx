@@ -62,8 +62,8 @@ const Projects = () => {
                     </StyledTabs>
                 </Box>
                 <Box className='tab-panel-container'>
-                  <TabPanel  className='tab-panel' value='1'><ProjectsCarousel/></TabPanel>
-                  <TabPanel className='tab-panel' value='2'>Item 2</TabPanel>
+                  <TabPanel  className='tab-panel' value='1'><ProjectsCarousel /></TabPanel>
+                  <TabPanel className='tab-panel' value='2'><ProjectsCarousel /></TabPanel>
                 </Box>
                 
             </TabContext>
