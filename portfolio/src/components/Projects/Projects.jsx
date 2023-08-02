@@ -49,19 +49,19 @@ const Projects = () => {
     }
 
     return (
-        <Box sx={{background: '#f7f7f7', marginLeft: 'auto', marginRight: 'auto'}}>
-            <TabContext value={value} sx={{maxWidth: '60%'}}>
-                <Box>
-                    <StyledTabs centered onChange={handleChange} value={value} sx={{marginTop: '6%'}}>
+        <Box className='projects-container'>
+            <TabContext value={value}>
+                <Box className='tab-lab'>
+                    <StyledTabs centered onChange={handleChange} value={value}>
                         <StyledTab 
                         value='1'
-                        className='label-item' label='Web' sx={{fontFamily: 'Outfit', textTransform: 'Capitalize', fontWeight: '300'}}></StyledTab>
+                        label='Web' sx={{fontFamily: 'Outfit', textTransform: 'Capitalize', fontWeight: '300'}}></StyledTab>
                         <StyledTab 
                         value='2'
-                        className='label-item' label='Design' sx={{fontFamily: 'Outfit', textTransform: 'Capitalize', fontWeight: '300'}}></StyledTab>
+                        label='Design' sx={{fontFamily: 'Outfit', textTransform: 'Capitalize', fontWeight: '300'}}></StyledTab>
                     </StyledTabs>
                 </Box>
-                <Box sx={{padding: '0'}}>
+                <Box className='tab-panel-container'>
                   <TabPanel  className='tab-panel' value='1'><ProjectsCarousel/></TabPanel>
                   <TabPanel className='tab-panel' value='2'>Item 2</TabPanel>
                 </Box>

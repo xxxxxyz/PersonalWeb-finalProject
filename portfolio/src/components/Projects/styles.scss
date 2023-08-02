@@ -1,12 +1,16 @@
-.label-item {
-    font-family: 'Outfit', sans-serif;
-    font-weight: 300;
-    text-transform: capitalize;
+.projects-container  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    height: 84%;
+    width: 90%;
+    
+    .table-panel {
+        padding: 0;
+    }
+
 }
 
-.tab-panel {
-    padding: 0 !important;
-    max-width: 600px !important;
-    margin-left: auto;
-    margin-right: auto;
-}
+
+
