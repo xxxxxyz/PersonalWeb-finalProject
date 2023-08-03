@@ -13,7 +13,6 @@ const Sidebar = () => {
         <nav className='nav-container'>
           <NavLink exact='true' activeclassname='active' to='/' className='nav-item'>About me</NavLink>
           <NavLink exact='true' activeclassname='active' to='/projects' className='nav-item'>Projects</NavLink>
-          {/* <NavLink exact='true' activeclassname='active' to='/contact' className='nav-item'>Contact</NavLink>   */}
         </nav>
       </Box>
   )

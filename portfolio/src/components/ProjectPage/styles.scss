@@ -1,0 +1,30 @@
+.project-content-container {
+    position: relative;
+    margin-top: 20px;
+    height: 80%;
+
+    .swiper {
+        width: 98%;
+        height: 100%;
+
+        .swiper-slide {
+            font-size: 18px;
+            height: auto;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            padding: 30px;
+
+            .image-1 {
+                height: 280px;
+                margin-bottom: 20px;
+            }
+
+            .project-content {
+                width: 60%;
+            }
+        }
+
+      }
+      
+      
+}

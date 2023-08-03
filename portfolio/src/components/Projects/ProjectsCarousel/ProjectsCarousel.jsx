@@ -30,9 +30,9 @@ const ProjectsCarousel = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className='project-card card1'>
+          <Link to='/projects/projectpage' className='project-card card1' style={{textDecoration: 'none'}}>
               {<ProjectCard title='Filmpire' content='This is a mockup project.' imageUrl='https://images.pexels.com/photos/3137890/pexels-photo-3137890.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'/>}
-            </div>
+            </Link>
         </SwiperSlide>
         <SwiperSlide>
           <div className='project-card card2'>
