@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // import Slider from 'react-slick';
-import {Box} from '@mui/material';
+import { Box } from '@mui/material';
 
 import ProjectCard from '../ProjectCard/ProjectCard';
+import ProjectPage from '../../ProjectPage/ProjectPage';
 
 import 'swiper/scss';
 import 'swiper/scss/navigation';

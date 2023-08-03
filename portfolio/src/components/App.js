@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import Layout from './Layout/Layout';
 import Home from './Home/Home';
 import Projects from './Projects/Projects';
+import ProjectPage from './ProjectPage/ProjectPage';
 
 import './App.scss';
 
