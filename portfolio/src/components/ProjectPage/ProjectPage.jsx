@@ -25,10 +25,10 @@ const ProjectPage = () => {
         {/* <button className='cta-back'>Back</button> */}
         <SwiperSlide >
           <Box className='project-content'>
-            <Typography variant='caption'>Dec, 2023</Typography>
-            <Typography variant='h5' gutterBottom>Sed nulla at cras mattis</Typography>
+            <Typography variant='caption' sx={{fontFamily: 'Outfit', fontWeight: '100'}}>Dec, 2023</Typography>
+            <Typography variant='h5' sx={{fontFamily: 'Outfit', fontWeight: '300'}} gutterBottom>Sed nulla at cras mattis</Typography>
             <img className='image-1' src='https://images.pexels.com/photos/3137890/pexels-photo-3137890.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' />
-            <Typography variant='body2' sx={{fontWeight: '100', textAlign: 'justify'}}>Congue in nulla odio eu porttitor at. Quam pulvinar ipsum iaculis nibh auctor tristique egestas suspendisse mi. Fringilla non vulputate arcu donec nulla enim fermentum scelerisque. Quis pulvinar pharetra bibendum ante amet viverra. Donec in lacus cursus proin.<br/><br/>
+            <Typography variant='body2' sx={{fontFamily:'Outfit',fontWeight: '100', textAlign: 'left', letterSpacing:'2%',}}>Congue in nulla odio eu porttitor at. Quam pulvinar ipsum iaculis nibh auctor tristique egestas suspendisse mi. Fringilla non vulputate arcu donec nulla enim fermentum scelerisque. Quis pulvinar pharetra bibendum ante amet viverra. Donec in lacus cursus proin.<br/><br/>
 
               Adipiscing porta sollicitudin risus lorem quam leo sollicitudin libero.
             Vitae aliquet congue morbi arcu augue sit. Pulvinar augue consectetur nec nunc purus neque dolor lacinia. Mauris orci nibh dolor nulla habitant interdum tristique tellus. Commodo iaculis fringilla at sem. In fusce facilisis amet ut turpis urna pretium. Dictum cras sit nulla aliquam elit.<br/><br/>
