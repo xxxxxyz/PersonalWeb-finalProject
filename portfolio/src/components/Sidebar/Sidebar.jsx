@@ -25,7 +25,7 @@ const Sidebar = () => {
           {/* <div style={{fontFamily: 'Gaegu'}}>.yz</div> */}
         </Link>
         <nav className='nav-container'>
-          <NavLink exact='true' activeclassname='active' to='/' className='nav-item'>About me</NavLink>
+          <NavLink exact='true' activeclassname='active' to='/' className='nav-item'>Home</NavLink>
           <NavLink exact='true' activeclassname='active' to='/projects' className='nav-item'>Projects</NavLink>
         </nav>
       </Box>

@@ -7,15 +7,16 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Box } from '@mui/material';
 
 import ProjectCard from '../ProjectCard/ProjectCard';
-import ProjectPage from '../../ProjectPage/ProjectPage';
 
 import 'swiper/scss';
 import 'swiper/scss/navigation';
 import 'swiper/scss/pagination';
+import 'swiper/scss/effect-fade';
+
 
 import  './styles.scss';
 
-import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
+import { EffectFade, Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 
 const ProjectsCarousel = () => {
   return (
@@ -26,8 +27,13 @@ const ProjectsCarousel = () => {
         pagination={true}
         mousewheel={true}
         keyboard={true}
-        modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-        className="mySwiper"
+        slidesPerView={1}
+        spaceBetween={30}
+        speed={800}
+        // effect={'fade'}
+
+        modules={[EffectFade, Navigation, Pagination, Mousewheel, Keyboard]}
+        className="projectsSwiper"
       >
         <SwiperSlide>
           <Link to='/projects/projectpage' className='project-card card1' style={{textDecoration: 'none'}}>
