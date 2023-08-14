@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
+    animation: fadeIn 1s 2s;
 
     .fake-web {
         width: 70%;
@@ -15,7 +16,6 @@
         color: #343434;
         background: none;
         text-align: center;
-        animation: fadeIn 1s 2s;
 
         .browser-header {
             display: flex;

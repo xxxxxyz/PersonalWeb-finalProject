@@ -1,13 +1,17 @@
 .projects-container  {
-    display: flex;
+    display: block;
+    position: relative;
     flex-direction: column;
     justify-content: center;
     margin: auto;
-    height: 84%;
+    height: 90%;
     width: 90%;
     
-    .table-panel {
-        padding: 0;
+    .tab-panel-container {
+        width: 100% !important;
+        padding: 0 !important;
+        height: 80%;
+
     }
 
 }

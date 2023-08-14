@@ -69,7 +69,7 @@ const Home = () => {
           <Box className='slide'>
             <Box sx={{fontFamily: 'Outfit', fontWeight: '300', justifyContent:'flex-start', textAlign:'left', width:'80%'}}>
               <AnimatedLetters strArray={aboutArray} letterClass={letterClass} index={0}/>
-              <Box className='text-content' sx={{marginTop: '8px'}}>
+              <Box className='text-content'>
                 <p>
                   I am a dedicated designer working as a freelance focusing on digital material design.
                 </p>
