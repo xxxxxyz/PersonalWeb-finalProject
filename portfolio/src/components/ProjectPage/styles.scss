@@ -1,6 +1,6 @@
 .project-content-container {
     position: relative;
-    margin-top: 12px;
+    margin-top: 20px;
     height: 80%;
 
     .swiper {
@@ -20,11 +20,17 @@
             }
 
             .project-content {
+                margin-left: auto;
+                margin-right: auto;
                 width: 60%;
             }
         }
 
+        
       }
-      
-      
+    
 }
+
+
+
+

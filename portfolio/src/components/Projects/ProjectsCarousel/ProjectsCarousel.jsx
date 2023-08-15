@@ -28,12 +28,10 @@ const ProjectsCarousel = () => {
         mousewheel={true}
         keyboard={true}
         slidesPerView={1}
-        spaceBetween={30}
+        spaceBetween={20}
         speed={800}
-        // effect={'fade'}
-
         modules={[EffectFade, Navigation, Pagination, Mousewheel, Keyboard]}
-        className="projectsSwiper"
+        className="projects-swiper"
       >
         <SwiperSlide>
           <Link to='/projects/projectpage' className='project-card card1' style={{textDecoration: 'none'}}>
