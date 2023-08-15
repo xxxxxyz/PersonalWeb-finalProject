@@ -1,19 +1,20 @@
 .projects-container  {
-    display: block;
+    display: flex;
     position: relative;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     margin: auto;
     height: 82%;
     width: 90%;
-    padding-top: 4%;
+    // padding-top: 4%;
 
     .tab-panel-container {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
-        height: 90%;
+        // height: 90%;
         margin-top: 30px;
         padding-top: auto;
         padding-bottom: auto;
