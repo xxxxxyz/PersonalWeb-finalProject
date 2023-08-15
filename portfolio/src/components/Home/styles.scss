@@ -1,6 +1,6 @@
 .swiper {
    width: 90%;
-   height: 80%;
+   height: 90%;
 
    .swiper-slide {
       text-align: center;
@@ -21,13 +21,15 @@
          flex-direction: column;
          justify-content: center;
          align-items: center;
+         margin-left: auto;
+         margin-right: auto;
          width: 80%;
          height: 100%;
          font-family: 'Outfit',sans-serif;
 
 
          .sub-title {
-            animation: fadeIn 1s 4.6s backwards;
+            animation: fadeIn 1s 6s backwards;
          }
       
          .text-content {
