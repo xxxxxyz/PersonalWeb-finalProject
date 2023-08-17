@@ -5,6 +5,7 @@ import Layout from './Layout/Layout';
 import Home from './Home/Home';
 import Projects from './Projects/Projects';
 import ProjectPage from './ProjectPage/ProjectPage';
+import AnimCursor from './AnimCursor/AnimCursor';
 
 import './App.scss';
 
@@ -18,6 +19,7 @@ function App() {
           <Route path='/projects/projectpage' element={<ProjectPage />} />
         </Route>
       </Routes>
+      <AnimCursor />
     </div>
   )
 }
