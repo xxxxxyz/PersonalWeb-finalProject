@@ -6,9 +6,9 @@ const AnimCursor = () => {
   return (
     <div className='cursor-shape'>
         <AnimatedCursor 
-            innerSize={10}
-            outerSize={10}
-            color='29,91,121'
+            innerSize={8}
+            outerSize={12}
+            color='97,103,122'
             outerAlpha={0.2}
             innerScale={0.7}
             outerScale={5}
