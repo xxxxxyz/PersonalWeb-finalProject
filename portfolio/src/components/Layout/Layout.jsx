@@ -8,11 +8,9 @@ import Sidebar from '../Sidebar/Sidebar';
 
 const Layout = () => {
   return (
-        <Box className='App'>
-            <Box>
-                <Sidebar />
-            </Box>
-            <Box className='page'>
+        <Box className='app'>
+            <Sidebar />
+            <Box className='main-layout'>
                 <Box className='fake-web'>
                     <div className='browser-header' sx={{height: '50px',}}>
                         <Box className='browser-menu-icon'>

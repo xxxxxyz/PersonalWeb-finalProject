@@ -3,28 +3,31 @@
 @import 'animate.css';
 
 
-@media screen and (min-width: 800px) {
-   .main-container {
-      display: block;
-      width: 100%;
-      height: 100%;
-     margin: 0 80px;
-  
-     .outer-wrapper {
-        position: absolute;
-        z-index: -1;
-     
-        .content-wrapper {
-           display: flex;
-           flex-direction: row;
-           z-index: -1;
-         }
-     
-     }
 
+
+
+
+.main-container {
+   display: block;
+   width: 100%;
+   height: 100%;
+   margin: 0 40px;
+
+   .outer-wrapper {
+      position: absolute;
+      z-index: -1;
+   
+      .content-wrapper {
+         display: flex;
+         flex-direction: row;
+         z-index: -1;
+      }
+   
    }
 
 }
+
+
 
 @media screen and (max-width: 375px) {
    
