@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>About</title>
+</head>
+<body>
+    <!-- navigation part -->
+    <div class="scroll-up-btn">
+        <i class="fa fa-angle-up"></i>
+    </div>
+    <nav  class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="./index.html">Zoey <span>Xia</span></a></div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./about.html" class="active-nav">About</a></li>
+                <li><a href="#"><button>Email me</button></a></li>
+            </ul>
+            <div class="menu-btn one">
+                <input type="checkbox">
+                <a href="#" class="trigger"></a>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- about me info part -->
+    <section class="aboutMe">
+        <div class="max-width">
+            <div class="aboutMe-left">
+            <div class="aboutMeHeader">About me</div>
+            <div class="content">Volutpat id pellentesque gravida volutpat feugiat molestie lacus fermentum massa. Tempor turpis quis est risus purus diam adipiscing viverra viverra. Pretium nulla cursus varius ac. Aliquet eros commodo montes aliquam risus. Vitae consequat tellus libero elit.</div>
+            </div>
+            <div class="aboutMe-right">
+            <div class="content"><br><br><br><br><br><br><br>ultrices lorem dolor mi tempus vitae. Rutrum purus viverra turpis lorem fames in pellentesque ac interdum. <br><br>
+            Id hendrerit neque morbi tincidunt. Elit vestibulum pulvinar turpis in. Ac sed et orci pellentesque morbi semper nunc augue nam. Ac ridiculus augue egestas sapien rutrum risus. In viverra a lacinia mattis et porta at. Vulputate tortor id rhoncus odio adipiscing posuere.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- service section loop  --> 
+    <section class="services">
+        <div class="max-width">
+            <div class="card-title">What I can do for you</div>   
+            <div class="cards">
+                <div class="card" id="Web">
+                    <div class="card_icon-container">
+                        <i class="fa fa-paint-brush" style="font-size:28px"></i>
+                    </div>
+                    <div class="card_content">
+                        <h4>Web Design</h4>
+                    </div>
+                    <div class="card_info">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <!-- contact form part  -->
+    <section class="contact-table">
+        <div class="max-width">
+           <div class="contactLeft">
+            <div class="contactHeader">Let's know each other!</div>
+            <div class="content">Consectetur arcu vulputate sem et. A nulla sit id consequat commodo augue nunc maecenas proin. Adipiscing vestibulum quis enim non. Amet et quisque adipiscing in vel sit ultrices pellentesque in. Elit nunc ornare tellus in iaculis eget dignissim orci.</div>
+           </div> 
+           <div class="contactRight">
+                <form name="submit-to-google-sheet">
+                    <div class="fields">
+                        <input type="text"  name="Name" placeholder="Name"  required>    
+                        <input type="email" name="Email" placeholder="Email"  required>    
+                        <textarea  name="Message" cols="58" rows="10"  placeholder="Message" required></textarea>
+                        <button type="submit" class="form-btn">Send</button>
+                    </div>
+                </form> 
+           </div>
+        </div>
+    </section>
+    <!-- footer  -->
+    <section class="footer">
+        <div class="max-width">
+            <div class="clock" id="myClockDisplay"></div>
+            <div class="useful-link">
+                <ul>
+                    <li><a href="#">Works</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="personal-info">
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Behance</a></li>
+                    <li><a href="#">Linkedin</a></li><br>
+                    <li><a href="#">+61 123 345678</a></ul></li>
+                    <li><a href="#">xiayuze0406@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="copyright">©ZoeyX.2022</div>
+        </div>
+        
+    </section>
+    <!-- service section Repeat works via JS Loop -->
+    <script>
+        const services = [
+            { 
+                id: 'ads',
+                filename : 'fa fa-line-chart',
+                servicename : 'Advertising',
+                content : 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.'
+            },
+            { 
+                id: 'design',
+                filename : 'fa fa-check-square',
+                servicename : 'Apps Design',
+                content : 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.'
+            } 
+        ] 
+        const cards1 = document.querySelector('.cards')
+        for ( let {id,filename,servicename,content} of services){
+            let card = document.createElement('div') 
+            card.className = 'card'
+            card.id = id
+            card.innerHTML = `
+                <div class="card_icon-container">
+                    <i class="${filename}" style="font-size: 28px"></i>
+                </div>
+                <div class="card_content">
+                    <h4>${servicename}</h4>
+                </div>
+                <div class="card_info">
+                    <p>${content}</p>
+                </div>`
+        cards1.appendChild(card) 
+    }       
+    </script>
+
+    <!-- contact form data storage -->
+    <script> 
+        // Reference: form-to-google-sheets https://github.com/jamiewilson/form-to-google-sheets
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyGz5WBB9cZFQbF3LjPSKlrMXrE2_BBIuCwKGO4ZwLo3XB4iDXKSJDtfNtHe3LO8QHsDA/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+            console.log('zoe')
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script> 
+      <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+      <script src="script.js"></script>
+      
+</body>
+</html>
