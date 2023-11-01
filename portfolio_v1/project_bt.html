@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Project</title>
+</head>
+<body class='font-inter bg-[#f2f2f2] text-[#333333]'>
+    <!-- intro section -->
+    <div class='bg-white px-10 md:px-20'>
+        <!-- nav bar -->
+        <nav>
+            <div class='align-middle py-8 justify-between flex row'>
+                <div class='text-xl w-auto uppercase font-semibold'><a href="./index.html">Zoe Xia</a></div>
+                <ul class='hidden md:flex justify-around uppercase'>
+                    <li><a class="pl-6 text-m hover:underline" href="#projects">Projects</a></li>
+                    <li><a class="pl-6 text-m hover:underline" href="#contact">Contact</a></li>  
+                </ul>
+                <!-- menu icon -->
+                <div id="menu-btn" class='hidden w-10 h-10 cursor-pointer'>
+                    <input type="checkbox" id="input-menuBtn" class='hidden w-10 h-10 cursor-pointer absolute opacity-0'>
+                    <div class='flex column w-10 h-10'>
+                        <div id="trigger" class='w-6 h-0.5 bg-[#333333]'></div>
+                        <div id="trigger" class='w-6 h-0.5 bg-[#333333]'></div>
+                        <div id="trigger" class='w-6 h-0.5 bg-[#333333]'></div>
+                    </div>  
+                </div>                   
+            </div>
+            
+        </nav>   
+    </div>
+    <div class='px-10 md:px-20 my-32 md:flex md:row md:justify-between'>
+        <div class='uppercase text-6xl font-semibold underline-offset-2   mb-12'>Web Design
+        </div>
+        <div class='w-full md:w-[50%]'>
+            <p class='font-medium text-xl uppercase'>Role - UI UX Designer</p><br>
+            <p class='font-light text-xl leading-9'>B & T is an online luxury fashion retail platform that sells products from top individual designers and brands around the world
+
+            </p>
+        </div>
+    </div>
+    
+    <div class='px-10 md:px-20 py-32'>
+        <video class='w-full' controls>
+            <source src="https://video.wixstatic.com/video/f338f9_d5251e9fdeff41ba9c5dbe7d192a34fa/720p/mp4/file.mp4" type="video/mp4">
+            Your browser does not support HTML video.
+          </video>
+    </div>
+
+    <div class='px-10 md:px-20 mb-32'>
+        <h1><a href=""><span class='uppercase font-medium text-2xl underline'>contact me</a></span>  for more project details</h1>
+    </div>
+
+    <!-- contact section -->
+    <div id='contact' class='bg-white pt-32  pb-10 px-10 md:px-20'>
+        <!-- <h1 class='text-5xl mb-16 font-semibold'>FIND ME</h1> -->
+        <div class='w-full flex row justify-end align-baseline mb-16'>
+            <div class='hidden w-[60%] mt-16'><div class='h-[1px] w-full bg-gray-700'></div></div>
+            <div class='text-7xl pl-6 font-medium text-gray-700 uppercase'>Find me</div>
+        </div>
+        <div class='flex row font-medium justify-between'>
+            <div class='text-gray-500'>Copyright©ZOEXIA</div>
+            <div class='flex row'>
+                <a class="flex" href=mailto:"xiayuze0406@gmail.com"><span class='ml-2 underline underline-offset-2 hover:text-gray-700 hover:underline'>Email</span></a>
+                <a class="flex ml-16" href="https://github.com/xxxxxyz"><span class='ml-2 underline underline-offset-2 hover:text-gray-700 hover:underline'>Github</span></a>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+    <script src='./index.js'></script>
+</body>
+</html>
