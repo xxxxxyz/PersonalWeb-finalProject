@@ -13,20 +13,23 @@ module.exports = {
         },
         fadeInUp:{
           'from': {
-            transform: 'translateY(20px)',
+            '--webkit0transform': 'translateY(50px)',
+            transform: 'translateY(50px)',
             opacity:'0',
           },
           'to': {
+            '--webkit0transform': 'translateY(0)',
             transform: 'translateY(0)',
-            opacity:'100',
+            opacity:'1',
           },
         },
       },
       animation: {
         'wiggle': 'wiggle 1s ease-in-out infinite',
-        'fade-in-up': 'fadeInUp 0.75 ease-in-out',
+        'fade-in-up': 'fadeInUp 0.75s ease-in-out',
       },
     },
   },
   plugins: [],
 };
+
