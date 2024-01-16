@@ -1,22 +1,19 @@
 import * as React from "react";
 import { useEffect } from "react";
-import Aos from "aos";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./App.css";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
+import Layout from "./Layout/Layout";
 
 function App() {
   useEffect(() => {
-    Aos.init();
+    AOS.init();
+    AOS.refresh();
   }, []);
-
   return (
     <div className="App">
-      <Header />
-      <main>
-        <h1>Hello World</h1>
-      </main>
-      <Footer />
+      <Layout />
     </div>
   );
 }
