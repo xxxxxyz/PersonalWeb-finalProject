@@ -10,7 +10,6 @@ const Header = () => {
         data-aos-duration="600"
         data-aos-easing="linear"
       >
-        <Navbar />
         {/* banner section */}
         <div className="py-32 md:my-20">
           <div className="w-full text-4xl font-medium leading-relaxed md:w-[80%] md:text-7xl md:leading-tight">

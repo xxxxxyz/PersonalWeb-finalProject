@@ -1,12 +1,12 @@
 import React from "react";
-import Project from "./ProjectSection";
+import ProjectSection from "./ProjectSection";
 
 const ProjectsList = ({ projects }) => {
   const groupProjects = Object.groupBy(projects, ({ role }) => role);
   const uxProjects = groupProjects.UX;
   const designProjects = groupProjects.Designer;
   return (
-    <div>
+    <div id="projects-list">
       <div
         className="flex flex-row justify-between"
         data-aos="fade-up"
@@ -22,7 +22,7 @@ const ProjectsList = ({ projects }) => {
       </div>
       <div>
         {uxProjects.map((uxProject) => {
-          return <Project key={uxProject.id} project={uxProject} />;
+          return <ProjectSection key={uxProject.id} project={uxProject} />;
         })}
       </div>
 
@@ -55,7 +55,9 @@ const ProjectsList = ({ projects }) => {
       </div>
       <div className="flex justify-between mb-48 mt-16">
         {designProjects.map((designProject) => {
-          return <Project key={designProject.id} project={designProject} />;
+          return (
+            <ProjectSection key={designProject.id} project={designProject} />
+          );
         })}
       </div>
     </div>

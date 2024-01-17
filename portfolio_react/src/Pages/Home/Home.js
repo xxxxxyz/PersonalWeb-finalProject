@@ -1,12 +1,12 @@
 import React from "react";
 
-import Header from "./Header/Header";
-import ProjectsList from "./ProjectsList/ProjectsList";
-import Footer from "../components/Footer/Footer";
-import HealthGoLandingPage from "../assets/images/HealthGoLandingPage.png";
-import BTLanding from "../assets/images/B&TLanding.png";
-import BrandCard from "../assets/images/BrandCard.png";
-import BrandingSuil from "../assets/images/Branding_SuiL copy.png";
+import HealthGoLandingPage from "../../assets/images/HealthGoLandingPage.png";
+import BTLanding from "../../assets/images/B&TLanding.png";
+import BrandCard from "../../assets/images/BrandCard.png";
+import BrandingSuil from "../../assets/images/Branding_SuiL.png";
+
+import Header from "../Header/Header";
+import ProjectsList from "../ProjectsList/ProjectsList";
 
 const projects = [
   {
@@ -47,14 +47,13 @@ const projects = [
   },
 ];
 
-const Layout = () => {
+const Home = () => {
   return (
-    <div className="block mx-[4%] mt-[20px]">
+    <div>
       <Header />
       <ProjectsList projects={projects} />
-      <Footer />
     </div>
   );
 };
 
-export default Layout;
+export default Home;

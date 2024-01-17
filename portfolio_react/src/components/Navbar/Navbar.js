@@ -10,8 +10,12 @@ const Navbar = () => {
       {/* nav link */}
       <div className="flex items-center text-m">
         <ul className="hidden md:flex">
-          <li className="ml-6 hover:underline">Projects</li>
-          <li className="ml-6 hover:underline">Contact</li>
+          <li className="ml-6 hover:underline">
+            <a href="#projects-list">projects</a>
+          </li>
+          <li className="ml-6 hover:underline">
+            <a href="">contact</a>
+          </li>
         </ul>
       </div>
     </div>
