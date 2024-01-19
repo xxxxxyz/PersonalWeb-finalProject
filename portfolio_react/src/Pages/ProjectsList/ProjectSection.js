@@ -1,48 +1,59 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ProjectSection = ({ project }) => {
   const { category, id, image, intro, name } = project;
-  if (category === "Web Design Concept") {
+  if (category === "Web Design") {
     return (
-      <div className="mb-48 mt-16">
-        <a
-          href=""
+      <div className="mb-20 mt-4 md:mb-48 md:mt-12">
+        <Link
+          to={`/project/${id}`}
           data-aos="fade-up"
           data-aos-duration="600"
-          data-aos-easing="linear"
+          data-aos-easing="ease-in-out"
         >
           <img src={image} alt={name} className="rounded-md" />
-        </a>
-        <div
-          className="subtitle flex row justify-between pt-4"
-          data-aos="fade-up"
-          data-aos-duration="600"
-          data-aos-easing="linear"
-        >
-          <div>{category}</div>
-          <div>UI UX Design</div>
+        </Link>
+        <div className="subtitle flex row justify-between pt-4">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="600"
+            data-aos-easing="ease-in-out"
+          >
+            {category}
+          </div>
+          <div
+            data-aos="fade-left"
+            data-aos-duration="600"
+            data-aos-easing="ease-in-out"
+          >
+            UI UX Design
+          </div>
         </div>
         <div
-          className="pt-12 w-full mx-auto md:w-[50%]"
+          className="mt-4 md:mt-12 w-full mx-auto md:w-[50%]"
           data-aos="fade-up"
-          data-aos-duration="600"
-          data-aos-easing="linear"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
         >
-          <div className="text-xl mb-6 leading-loose md:text-4xl md:leading-relaxed">
+          <div className="text-xl md:mb-8 leading-loose md:text-4xl md:leading-relaxed">
             {intro}
           </div>
-          <a href="/" className="text-gray-500 underline cursor-pointer ">
+          <Link
+            to={`/project/${id}`}
+            className="text-gray-500 underline cursor-pointer "
+          >
             Read more
-          </a>
+          </Link>
         </div>
         <div
           className="decoration w-full flex row justify-end align-baseline"
-          data-aos="fade-up"
-          data-aos-duration="600"
-          data-aos-easing="linear"
+          data-aos="fade-left"
+          data-aos-duration="800"
+          data-aos-easing="ease-in-out"
         >
           <div className="w-[60%] mt-16">
-            <div className="h-[1px] w-full bg-gray-700"></div>
+            <div className="h-[1px] w-full bg-current"></div>
           </div>
           <div className="text-7xl pl-6">{`0${id}`}</div>
         </div>
@@ -50,27 +61,32 @@ const ProjectSection = ({ project }) => {
     );
   } else {
     return (
-      <div className="small-project">
-        <div
-          className="max-w-[720px]"
-          data-aos="fade-up"
-          data-aos-duration="600"
-          data-aos-easing="linear"
-        >
-          <a href="">
-            <img src={image} alt={name} className="rounded-md" />
+      <div className="mb-20 small-project md:mt-0">
+        <div className="max-w-[720px]">
+          <div>
+            <img
+              src={image}
+              alt={name}
+              className="rounded-md"
+              data-aos="fade-up"
+              data-aos-duration="600"
+            />
             <div className="pt-2">
-              <div>{`${category} Design`}</div>
+              <div
+                data-aos="fade-right"
+                data-aos-duration="800"
+                data-aos-easing="ease-in-out"
+              >{`${category} Design`}</div>
             </div>
-          </a>
+          </div>
           <div
             className="w-full flex row justify-end align-baseline"
-            data-aos="fade-up"
-            data-aos-duration="600"
-            data-aos-easing="linear"
+            data-aos="fade-left"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-out"
           >
             <div className="w-[60%] mt-16">
-              <div className="h-[1px] w-full bg-gray-700"></div>
+              <div className="h-[1px] w-full bg-current"></div>
             </div>
             <div className="text-7xl pl-6">{`0${id}`}</div>
           </div>

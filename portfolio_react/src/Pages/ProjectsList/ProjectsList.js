@@ -1,4 +1,5 @@
 import React from "react";
+
 import ProjectSection from "./ProjectSection";
 
 const ProjectsList = ({ projects }) => {
@@ -8,17 +9,15 @@ const ProjectsList = ({ projects }) => {
   return (
     <div id="projects-list">
       <div
-        className="flex flex-row justify-between"
+        className="flex flex-row justify-between md:pt-20 items-baseline"
         data-aos="fade-up"
-        data-aos-duration="600"
+        data-aos-duration="800"
         data-aos-easing="linear"
       >
         <div className="uppercase font-medium underline underline-offset-2">
           Select works
         </div>
-        <div className="text-xs text-gray-500 uppercase">
-          Development | Design
-        </div>
+        <div className="text-xs uppercase">Development | Design</div>
       </div>
       <div>
         {uxProjects.map((uxProject) => {
@@ -27,9 +26,9 @@ const ProjectsList = ({ projects }) => {
       </div>
 
       <div
-        className="flex row justify-between w-full mb-16 mt-32"
+        className="flex row justify-between w-full mt-32 mb-"
         data-aos="fade-up"
-        data-aos-duration="600"
+        data-aos-duration="800"
         data-aos-easing="linear"
       >
         <div className="uppercase font-medium underline underline-offset-2">
@@ -53,7 +52,7 @@ const ProjectsList = ({ projects }) => {
           </svg>
         </div>
       </div>
-      <div className="flex justify-between mb-48 mt-16">
+      <div className="flex flex-col mt-4 mb-12 md:flex-row md:justify-between md:mb-48 md:mt-12">
         {designProjects.map((designProject) => {
           return (
             <ProjectSection key={designProject.id} project={designProject} />

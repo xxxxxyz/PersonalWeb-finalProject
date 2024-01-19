@@ -1,5 +1,4 @@
 import React from "react";
-import Contact from "./Contact/Contact";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -8,14 +7,16 @@ const Footer = () => {
       behavior: "smooth",
     });
   };
+
   return (
     <div>
       <div className="py-20 flex justify-end">
         <a
-          className="uppercase text-7xl pl-6 font-medium text-gray-700"
+          className="uppercase text-4xl md:text-7xl pl-6 font-medium"
           data-aos="fade-up"
           data-aos-duration="600"
           data-aos-easing="linear"
+          href="/"
         >
           find me
         </a>
@@ -23,12 +24,11 @@ const Footer = () => {
       <div className="footer flex justify-between mb-4">
         <p>Copyright©ZOEXIA</p>
         <p>
-          <a
-            href="XXX"
-            className="font-bold uppercase underline flex justify-between items-end"
+          <div
+            className="font-bold uppercase underline flex justify-between items-end cursor-pointer"
             onClick={scrollToTop}
           >
-            Back to Top
+            Back to top
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -43,7 +43,7 @@ const Footer = () => {
                 d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18"
               />
             </svg>
-          </a>
+          </div>
         </p>
         <p>
           <a href="https://github.com/xxxxxyz">GitHub</a>
