@@ -4,6 +4,7 @@ import { createBrowserRouter } from "react-router-dom";
 import ProjectDetail from "../Pages/ProjectDetail/ProjectDetail";
 import Layout from "../Pages/Layout/Layout";
 import Home from "../Pages/Home/Home";
+import Contact from "../components/Footer/Contact/Contact";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: "project/:projectId",
         element: <ProjectDetail />,
+      },
+      {
+        path: "contact",
+        element: <Contact />,
       },
     ],
   },

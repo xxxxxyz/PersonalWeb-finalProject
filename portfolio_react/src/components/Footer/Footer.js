@@ -10,7 +10,7 @@ const Footer = () => {
 
   return (
     <div>
-      <div className="py-20 flex justify-end">
+      <div className="py-20 flex justify-end" id="contact">
         <a
           className="uppercase text-4xl md:text-7xl pl-6 font-medium"
           data-aos="fade-up"

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 import { Link } from "react-router-dom";
 
@@ -21,8 +21,8 @@ const Navbar = () => {
           <li className="hover:underline">
             <a href="#projects-list">projects</a>
           </li>
-          <li className="hover:underline">
-            <a href="">contact</a>
+          <li className="hover:underline active:underline">
+            <Link to="contact">contact</Link>
           </li>
           <li>
             {/* theme controller */}
@@ -31,7 +31,7 @@ const Navbar = () => {
               <input
                 type="checkbox"
                 className="theme-controller"
-                value="black"
+                value="dracula"
               />
 
               {/* sun icon */}

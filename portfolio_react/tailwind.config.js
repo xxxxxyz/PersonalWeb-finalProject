@@ -6,6 +6,6 @@ module.exports = {
 
   // daisyUI config
   daisyui: {
-    themes: ["light", "dark", "black"],
+    themes: ["light", "dracula"],
   },
 };
