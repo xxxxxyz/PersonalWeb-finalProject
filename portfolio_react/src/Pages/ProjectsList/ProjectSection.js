@@ -62,12 +62,12 @@ const ProjectSection = ({ project }) => {
   } else {
     return (
       <div className="mb-20 small-project md:mt-0">
-        <div className="max-w-[720px]">
+        <div>
           <div>
             <img
               src={image}
               alt={name}
-              className="rounded-md"
+              className="rounded-md max-h-[400px] md:pr-4"
               data-aos="fade-up"
               data-aos-duration="600"
             />

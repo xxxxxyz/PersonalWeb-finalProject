@@ -14,7 +14,7 @@ const Layout = () => {
   }, []);
 
   return (
-    <div className="block px-[4%] pt-[20px]">
+    <div className="block px-[4%]">
       <Navbar />
       <Outlet />
       <Footer />

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div
-      className="flex items-center justify-between uppercase mb-8"
+      className="flex items-center justify-between uppercase mb-4 py-4"
       data-aos="fade-down"
       data-aos-duration="1500"
     >
@@ -19,9 +19,9 @@ const Navbar = () => {
       <div className="flex items-center text-m">
         <ul className="hidden md:flex gap-6">
           <li className="hover:underline">
-            <a href="#projects-list">projects</a>
+            <a href="/">Home</a>
           </li>
-          <li className="hover:underline active:underline">
+          <li className="hover:underline">
             <Link to="contact">contact</Link>
           </li>
           <li>
@@ -76,10 +76,10 @@ const Navbar = () => {
         </div>
         <ul tabIndex={0} className="menu dropdown-content shadow rounded-box">
           <li className="hover:underline">
-            <a href="#projects-list">projects</a>
+            <Link to="/">Home</Link>
           </li>
           <li className="hover:underline">
-            <a href="">contact</a>
+            <Link to="contact">contact</Link>
           </li>
         </ul>
       </div>

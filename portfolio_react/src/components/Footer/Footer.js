@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -11,7 +12,8 @@ const Footer = () => {
   return (
     <div>
       <div className="py-20 flex justify-end" id="contact">
-        <a
+        <Link
+          to="contact"
           className="uppercase text-4xl md:text-7xl pl-6 font-medium"
           data-aos="fade-up"
           data-aos-duration="600"
@@ -19,7 +21,7 @@ const Footer = () => {
           href="/"
         >
           find me
-        </a>
+        </Link>
       </div>
       <div className="footer flex justify-between mb-4">
         <p>Copyright©ZOEXIA</p>
